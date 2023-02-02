@@ -37,7 +37,7 @@ if(!pendo.designerEnabled) {
             } else {
                 pendo.dom(".pendo-block-wrapper[data-pendo-poll-id='" + dataPendoPollId + "']")[0].parentElement.parentElement.insertAdjacentHTML('afterEnd', requiredHTML(dataPendoPollId));
             }
-            requiredQuestions[i].innerText = requiredQuestions[i].innerText.replace("[REQUIRED]", "");
+            requiredQuestions[i].innerHTML = requiredQuestions[i].innerHTML.replace("[REQUIRED]", "");
         }
         if(requiredPollIds.length>0) {
             disableEligibleButtons(textForDisabledButtons);
